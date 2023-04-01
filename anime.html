@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>69anime</title>
+    <style>
+        .box{
+            display:grid;
+            grid-gap:10px;
+            grid-template-areas: 
+            'navbar navbar navbar navbar navbar navbar'
+            'left main main main main right'
+            ;
+            background: url('d65baa3f-33a5-486f-82e4-87b4754a0699.jpg');
+            z-index: 20;
+        }
+        .item{
+            text-align: center;
+            border:2px solid black;
+        }
+        #navbar{
+            background-color: rgb(83, 69, 149);
+            grid-area:navbar;
+            height: 40px;
+            border-radius: 40px;
+        }
+        #left{
+            grid-area:left;
+            height:640px;
+            width:200px;
+            border-radius: 59px;
+            background-image: url('thumbbig-269222.webp');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size:1142px;
+            color:aliceblue;
+        }
+        #right{
+            grid-area:right;
+            height:640px;
+            width:200px;
+            border-radius: 59px;
+            background-image: url('thumbbig-262861.webp');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size:1142px;
+            color:aliceblue;
+        }
+        #main{
+            grid-area:main;
+            height:640px;
+            width:1000px;
+            border-radius: 20px;
+            background-image: url('36630.jpg');
+            background-size: 1142px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            z-index: 30;
+            color:aliceblue;
+        }
+        #navbar li{
+            float:left;
+            list-style: none;
+            margin: 1px 50px;
+        }
+        #navbar li a{
+            text-decoration: none;
+            color:aqua;
+        }
+        ol li{
+            margin:20px;
+        }
+        form input{
+            margin:20px;
+        }
+        #tit{
+            margin:30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div id="navbar" class ="item">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">TRENDING</a></li>
+                <li><a href="#">MOVIES</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </div>
+        <div id="left" class="item">
+            <div id="tit">BEST ANIME SERIES</div>
+            <ol>
+                <li>Fullmetal Alchemist: Brotherhood</li>
+                <li>Hunter x Hunter</li>
+                <li>Steins;Gate</li>
+                <li>Clannad: After Story</li>
+                <li>Code Geass</li>
+                <li>Cowboy Bebop</li>
+                <li>Fighting Spirit</li>
+                <li>Gurren Lagann</li>
+                <li>Death Note</li>
+                <li>Monster </li>
+            </ol>
+        </div>
+        <div id="right" class="item">
+            <div id="tit">
+                ANIME MOVIES
+            </div> 
+            <div>
+                <ol>
+                    <li>Spirited Away</li>
+                    <li>Mushi-Shi: Next Passage </li>
+                    <li>Grave of the Fireflies</li>
+                    <li>Princess Mononoke</li>
+                    <li> Your Name.</li>
+                    <li>Neon Genesis Evangelion: The End of Evangelion</li>
+                    <li>The House of Small Cubes</li>
+                    <li>Howl's Moving Castle</li>
+                    <li>My Neighbor Totoro </li>
+                    <li> Wolf Children</li>
+                </ol>
+            </div>
+        </div>
+        <div id="main" class ="item">
+            <div>SIGNUP/LOGIN ON 69ANIME</div>
+            <form>
+                <label for = "fname"> NAME:</label>
+                <div>
+                    <input type ="text" name = "firstname" id = "fname" > 
+                </div>
+                <label for = "email"> EMAIL:</label>
+                <div>
+                    <input type ="email" name ="eemail" id = "email" ><br>
+                </div>
+                <label for = "eligible"> are you 18+? </label>
+                <div>
+                    <input type = "checkbox" name ="eligibility" id = "eligible"><br>
+                </div>
+                select your gender:
+                <div>
+                    <label for = "gender" >male</label>
+                    <input type = "radio" name = "mygender" id = "gender">
+                    <label for = "gender" >female</label>
+                    <input type = "radio" name = "mygender" id = "gender">
+                </div><br>
+                <div>
+                    Write about your favourite anime:<br>
+                    <textarea name = "myText" cols = "30" rows = "10" ></textarea>
+                </div>
+                <div>
+                    <label for = "favanime" > select your favourite anime:</label>
+                    <select name ="myfav" id = "favanime" >
+                        <option value = "AOT">ATTACK ON TITAN</option>
+                        <option value = "DS">DEMON SLAYER</option>
+                        <option value = "FMAB">FULLMETAL ALCHEMIST BROTHERHOOD</option>
+                    </select>
+                </div>
+                <div>
+                    <input type = "submit" value = "submit now">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
